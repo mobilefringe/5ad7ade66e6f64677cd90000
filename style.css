@@ -1048,8 +1048,7 @@ strong, .bold {
             font-weight: 400;
             line-height: normal;
             position: relative;
-            
-        background: $accent;
+            background: $accent;
             &:after {
                 content: " ";
                 height: 3px;
