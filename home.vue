@@ -178,7 +178,7 @@
                     banners.map(banner => { 
                         banner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad7ade66e6f64677cd90000/image/jpeg/1524085268825/HeroImage.jpg";
                         banner.name = this.property.name;
-                        banner.description = "Discover the Mall";
+                        banner.description = "See Stores";
                         banner.url = "/stores";
                     });
                     
