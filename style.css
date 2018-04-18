@@ -382,7 +382,7 @@ strong, .bold {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-        margin-top: 80px;
+    margin-top: 80px;
 }
 
 .router_content {
@@ -668,7 +668,7 @@ strong, .bold {
 #primary_nav ul .menu_item a {
     padding: 0 15px;
 	display: block;
-	color: #FFF;
+	color: #000;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.4);
