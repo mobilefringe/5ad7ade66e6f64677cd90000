@@ -1041,6 +1041,10 @@ strong, .bold {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        .banner_title_container {
+            
+            background: $accent;
+        }
         .banner_title {
             color: #fff;
             text-transform : uppercase;
@@ -1048,7 +1052,6 @@ strong, .bold {
             font-weight: 400;
             line-height: normal;
             position: relative;
-            background: $accent;
             &:after {
                 content: " ";
                 height: 3px;
