@@ -8,10 +8,10 @@
 						<div class="home-banner" v-lazy:background-image="banner.image_url">
 						    <!--<div class="site_container">-->
 						        <div class="banner_text site_container">
-						        <div class="banner_title_container">
-                                    <h2 class="banner_title">{{banner.name}}</h2>
+						            <div class="banner_title_container">
+                                        <h2 class="banner_title">{{banner.name}}</h2>
                                     </div>
-                                    <router-link class="banner_btn hvr-icon-wobble-horizontal" :to="banner.url">{{banner.description}} <i class="fa fa-angle-right hvr-icon"></i></router-link>
+                                    <router-link class="banner_btn hvr-icon-wobble-horizontal caps" :to="banner.url">{{banner.description}} <i class="fa fa-angle-right hvr-icon"></i></router-link>
                                 </div>
 						    <!--</div>-->
 						</div>
