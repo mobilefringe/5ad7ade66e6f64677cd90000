@@ -1044,6 +1044,7 @@ strong, .bold {
         .banner_title_container {
             
             background: $accent;
+            padding:30px;
         }
         .banner_title {
             color: #fff;
