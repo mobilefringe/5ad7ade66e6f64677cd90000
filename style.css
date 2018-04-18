@@ -1108,7 +1108,7 @@ strong, .bold {
     padding: 0;
     button {
         background-color: $secondary;
-        border: 1px solid $secondary;
+        border: 1px solid $accent;
         // opacity: 0.5;
         width: 15px;
         height: 15px;
