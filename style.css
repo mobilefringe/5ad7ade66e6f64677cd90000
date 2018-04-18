@@ -1158,26 +1158,26 @@ strong, .bold {
 //         }
 //     }
 // }
-.home_page_title {
-    margin: 0;
-    padding: 50px 0px;
-    position: relative;
-    // font-family: "LeagueGothic-Re÷gular";
-    color: #000;
-    text-align: center;
-}
-.home_page_title:after {
-    content: " ";
-    height: 3px;
-    width: 90px;
-    background: $accent;
-    position: absolute;
-    left: 50%;
-    bottom: 35px;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-}
+// .home_page_title {
+//     margin: 0;
+//     padding: 50px 0px;
+//     position: relative;
+//     // font-family: "LeagueGothic-Re÷gular";
+//     color: #000;
+//     text-align: center;
+// }
+// .home_page_title:after {
+//     content: " ";
+//     height: 3px;
+//     width: 90px;
+//     background: $accent;
+//     position: absolute;
+//     left: 50%;
+//     bottom: 35px;
+//     -webkit-transform: translate(-50%, 0%);
+//     -ms-transform: translate(-50%, 0%);
+//     transform: translate(-50%, 0%);
+// }
 /* --- MASONRY GRID --- */
 
 .grid {
