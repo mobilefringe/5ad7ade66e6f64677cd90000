@@ -1049,7 +1049,7 @@ strong, .bold {
             color: #fff;
             text-transform : uppercase;
             font-size: 3.75rem;
-            font-weight: 400;
+            // font-weight: 400;
             line-height: normal;
             position: relative;
             margin: 0 auto;
