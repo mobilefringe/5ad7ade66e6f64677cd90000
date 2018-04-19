@@ -1,6 +1,7 @@
 {
   "header": {
     "open_today": "Open Today",
+    "open_now_until": "open_now_until",
     "closed": "Closed Today",
     "sign_up": "Sign Up",
     "stores" : "Stores",
