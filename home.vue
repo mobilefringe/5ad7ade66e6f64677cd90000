@@ -34,18 +34,6 @@
 		        </div>
 		    </div>
 		</div>
-		<div>
-		    <div class="col-sm-4">
-		        
-		    </div>
-		    <div class="col-sm-4">
-		        <div class="google_map">
-        		    <google-map :property="property"></google-map>
-        		</div>
-		    </div>
-		</div>
-		
-		<!--AIzaSyCj7UeR0E-kWVAnM7XG4sgm38JnCm6eqx0-->
 	</div>
 </template>
 
