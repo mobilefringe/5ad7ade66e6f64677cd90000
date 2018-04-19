@@ -33,37 +33,7 @@
 		            </router-link>
 		        </div>
 		    </div>
-            <div>
-		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
-		    </div>
-		    <div class="insta-feed-container">
-                <a v-for="(item, index) in instaFeed" :href="item.link" target="_blank" class="no_padding">
-                    <div class="insta-feed-image "  v-lazy:background-image="item.images.standard_resolution.url">
-                        <!--<a :href="item.link" target="_blank"><img :src="item.images.thumbnail.url"/></a>-->
-                        <div class="ih-item circle effect19">
-                            <div class="info">
-                				<div class="content">
-                					<p> 
-                    					<span>@{{item.caption.from.username}}</span> <br/>
-                    					<i class="fa fa-heart"></i>{{item.likes.count}} <br/>
-                    					<i class="fa fa-comment"></i> {{item.comments.count}} 
-                					</p>
-                				</div>
-                			</div>
-            			</div>
-                    </div>
-                </a>
-            </div>
-            <div id="home_hours_container"  v-if="getTodayHours">
-                <p class="open_now">
-                    <span v-if="getTodayHours.is_closed == null || !getTodayHours.is_closed ">{{$t("header.open_today")}}</span>
-                    <span v-else>{{$t("header.closed")}}</span> 
-                    <span v-if="getTodayHours.is_closed == null || !getTodayHours.is_closed ">
-                        {{getTodayHours.open_time | moment("h:mma", timezone)}} - {{getTodayHours.close_time | moment("h:mma", timezone)}} 
-                    </span>
-                        
-                    </p>
-            </div>
+           
 		</div>
 		<div style="height: 300px;margin-bottom:-30px;">
 		    <google-map :property="property"></google-map>
