@@ -405,7 +405,7 @@ strong, .bold {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 70px;
+    // margin-top: 70px;
 }
 
 .router_content {
