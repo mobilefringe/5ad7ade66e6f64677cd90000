@@ -39,6 +39,9 @@
     		       <p>{{property.address1}}</p>
     		       <p>{{property.city}}, {{property.country}}, {{property.postal_code}}</p>
     		       <p>{{property.contact_phone}}</p>
+    		       <div>
+    		           
+    		       </div>
     		    </div>
     		    <div class="col-sm-8">
     		        <div class="google_map">
