@@ -35,13 +35,14 @@
 		    </div>
 		    <div>
     		    <div class="col-sm-4">
+    		    <div v-if="property" class="property_dets"></div>
     		       <p>{{property.name}}</p>
     		       <p>{{property.address1}}</p>
     		       <p>{{property.city}}, {{property.country}}, {{property.postal_code}}</p>
     		       <p>{{property.contact_phone}}</p>
     		       <div>
     		           <div class="description_text text-center caps contact_us_dets">
-                        CONTACT US 
+                        CONTACT US
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
