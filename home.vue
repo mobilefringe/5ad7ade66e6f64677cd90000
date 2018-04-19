@@ -38,6 +38,9 @@
 		    <div class="col-sm-4">
 		        
 		    </div>
+		    <div class="col-sm-4">
+		        
+		    </div>
 		</div>
 		<div style="height: 300px;margin-bottom:-30px;">
 		    <google-map :property="property"></google-map>
