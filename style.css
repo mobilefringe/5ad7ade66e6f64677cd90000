@@ -1341,6 +1341,7 @@ strong, .bold {
 
 #home_hours_container {
     text-align : center;
+    text-transform: uppercase;
     // margin-bottom: 50px;
     height: 70px;
     line-height: 70px;
