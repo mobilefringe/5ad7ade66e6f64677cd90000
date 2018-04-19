@@ -35,7 +35,7 @@
 		    </div>
 		    <div>
     		    <div class="col-sm-4">
-    		        
+    		       <p>{{property.name}}</p>
     		    </div>
     		    <div class="col-sm-8">
     		        <div class="google_map">
