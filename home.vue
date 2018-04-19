@@ -39,7 +39,7 @@
 		        
 		    </div>
 		    <div class="col-sm-4">
-		        <div style="height: 300px;">
+		        <div class="google_map">
         		    <google-map :property="property"></google-map>
         		</div>
 		    </div>
