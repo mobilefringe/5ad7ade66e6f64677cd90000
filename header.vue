@@ -80,6 +80,7 @@
         Vue.use(BootstrapVue);
         return Vue.component("header-component", {
             template: template, // the variable template will be injected,
+            props: ['property_logo']
             data: function() {
                 return {
                     dataLoaded: false,
