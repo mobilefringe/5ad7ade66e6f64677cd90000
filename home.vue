@@ -40,7 +40,7 @@
 		    </div>
 		    <div class="col-sm-4">
 		        <div class="google_map">
-        		    <google-map :property="property"></google-map>
+        		    <google-map :property="property" :json></google-map>
         		</div>
 		    </div>
 		</div>
