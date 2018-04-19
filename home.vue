@@ -119,7 +119,9 @@
                     dataLoaded: false,
                     show_popup: false,
                     popup: null,
-                    formData : {},
+                    form_data : {},
+                    formSuccess : false,
+                    formError: false,
                     instaFeed: null
                 }
             },
