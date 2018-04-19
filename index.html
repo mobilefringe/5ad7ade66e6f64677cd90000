@@ -28,6 +28,42 @@
     					<router-view class="router_content" :locale="locale" :property_logo="property_logo"></router-view>
     				</transition>
     			</div>
+    			<div class="footer">
+					<div class="site_container">
+					    <div class="footer_logos">
+							<div class="site_logo ">
+								<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
+							</div>
+							<div class="footer_property">
+								<a href="https://www.morguard.com/" target="_blank">
+								<img src="//codecloud.cdn.speedyrails.net/sites/5a85d86f6e6f643351020000/image/png/1522094865211/morguard logo.png" class="" alt="">
+								</a>
+							</div>
+							<div class="safe_emplyer_logo">
+								<a href="https://www.morguard.com/news-knowledge/posts/cse2017-silverwin" target="_blank">
+								    <img src="//codecloud.cdn.speedyrails.net/sites/5a85d86f6e6f643351020000/image/jpeg/1520125615042/Morguard-CSE-winners-badge_silver.jpg" alt="Property Logo"/>
+								</a>
+							</div>
+						</div>
+						<div class="footer_nav hidden_phone">
+							<nav id="primary_nav">
+								<ul>
+									<li v-for="item in menu_items" class="menu_item">
+										<router-link :to="item.href">{{$t(item.name)}}</router-link>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer_terms">
+							<p>
+								&copy; {{copyright_year}}<span class="caps"> {{property.name}}</span> {{$t("footer.all_rights")}}
+								<router-link to="/pages/pinecentre-privacy-policy"> {{$t("footer.privacy_policy")}} </router-link>
+								<span class="hidden_phone">|</span><br class="visible_phone"/><span> {{$t("footer.powered_by")}}<a href="//www.mallmaverick.com" target="_blank"> Mall Maverick</a></span>
+							</p>
+							<!--<p>Powered by <a href="//www.mallmaverick.com" target="_blank">Mall Maverick</a></p>-->
+						</div>
+					</div>
+				</div>
     		</div>
     		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
     	{%endraw-%} 
