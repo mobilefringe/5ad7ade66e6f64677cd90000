@@ -137,7 +137,7 @@
             },
             todays_hours () {
                 var mall_hour = this.getTodayHours;
-                var today = moment().format();   ;
+                var today = moment().tz(this.timezone);   ;
                 if(today.open_time.format()){
                     
                 }
