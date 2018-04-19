@@ -35,11 +35,12 @@
 		    </div>
 		    <div>
     		    <div class="col-sm-4">
-    		    <div v-if="property" class="property_dets"></div>
-    		       <p>{{property.name}}</p>
-    		       <p>{{property.address1}}</p>
-    		       <p>{{property.city}}, {{property.country}}, {{property.postal_code}}</p>
-    		       <p>{{property.contact_phone}}</p>
+    		    <div v-if="property" class="property_dets">
+        		       <p>{{property.name}}</p>
+        		       <p>{{property.address1}}</p>
+        		       <p>{{property.city}}, {{property.country}}, {{property.postal_code}}</p>
+        		       <p>{{property.contact_phone}}</p>
+    		       </div>
     		       <div>
     		           <div class="description_text text-center caps contact_us_dets">
                         CONTACT US
