@@ -41,7 +41,7 @@
     		       <p>{{property.contact_phone}}</p>
     		       <div>
     		           <div class="description_text text-center caps contact_us_dets">
-                        CONTACT US FOR QUESTIONS, COMMENTS AND MORE INFORMATION.
+                        CONTACT US 
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
