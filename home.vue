@@ -266,7 +266,6 @@
                     document.getElementById('popup_backdrop').style.display = "none";
                 },
                 loadMap () {
-                    console.log(document.getElementById('map'));
                     window.initMap();
                 }
             }
