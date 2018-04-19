@@ -1345,6 +1345,7 @@ strong, .bold {
     // margin-bottom: 50px;
     height: 70px;
     line-height: 70px;
+    color: $accent;
     p{
         position: relative;
         // &:after {
