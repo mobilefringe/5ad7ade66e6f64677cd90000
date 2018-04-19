@@ -631,7 +631,7 @@ strong, .bold {
 }
 .site_logo {
     margin: 10px auto;
-    width: 200px;
+    width: 227px;
     text-align: left;
     display: inline-block;
     img {
@@ -672,7 +672,7 @@ strong, .bold {
 	text-transform: uppercase;
 	text-decoration: none;
 	&:hover {
-	    text-decoration: none;
+	    text-decoration: underline;
 	}
 }
 
