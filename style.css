@@ -653,7 +653,7 @@ strong, .bold {
     transition: background 0.5s ease-in;
 }
 .site_logo {
-       margin: 21px auto;
+    margin: 16px auto;
     width: 227px;
     text-align: left;
     display: inline-block;
