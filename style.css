@@ -1078,6 +1078,7 @@ strong, .bold {
             line-height: normal;
             position: relative;
             margin: 0 auto;
+            font-family: "SairaExtraCondensed-Bold"";
         }
         .banner_sub_title {
             margin-top: -10px;
