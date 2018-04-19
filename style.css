@@ -1346,18 +1346,19 @@ strong, .bold {
     line-height: 70px;
     p{
         position: relative;
-        &:after {
-            content: " ";
-            height: 3px;
-            width: 90px;
-            background: $accent;
-            position: absolute;
-            left: 50%;
-            bottom: -5px;
-            -webkit-transform: translate(-50%, 0%);
-            -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-        } 
+        // &:after {
+        //     content: " ";
+        //     height: 3px;
+        //     width: 90px;
+        //     background: $accent;
+        //     position: absolute;
+        //     left: 50%;
+        //     bottom: -5px;
+        //     -webkit-transform: translate(-50%, 0%);
+        //     -ms-transform: translate(-50%, 0%);
+        //     transform: translate(-50%, 0%);
+        // } 
+        margin:0 auto;
     }
 }
 /* INSIDE PAGES */
