@@ -34,6 +34,9 @@
 		        </div>
 		    </div>
 		</div>
+		<div>
+		    
+		</div>
 		<div style="height: 300px;margin-bottom:-30px;">
 		    <google-map :property="property"></google-map>
 		</div>
