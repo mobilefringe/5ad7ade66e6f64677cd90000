@@ -1126,7 +1126,7 @@ strong, .bold {
 
 .slick-dots{
     cursor: pointer;
-    display: block;
+    display: none;
     font-size: 0;
     line-height: 0;
     position: absolute;
