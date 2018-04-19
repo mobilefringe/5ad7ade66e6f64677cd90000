@@ -25,7 +25,7 @@
 		    </div>
 		    <div class="feature_items_container">
 		        <div class="feature_item col-sm-4" v-for="feature in feature_items">
-		            
+		            <img :alt="feature.name" >
 		        </div>
 		    </div>
             <div>
