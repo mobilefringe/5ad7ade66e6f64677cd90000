@@ -164,9 +164,6 @@
                 formData () {
                     this.formData.name = this.formData.firstname + " " + this.formData.lastname; 
                 },
-                locale: function(val, oldVal) {
-                    console.log("locale", this.locale);
-                },
             },
             computed: {
                 ...Vuex.mapGetters([
@@ -264,7 +261,7 @@
                 closePopup() {
                     this.show_popup = false;
                     document.getElementById('popup_backdrop').style.display = "none";
-                },
+                }
             }
         })
     })
