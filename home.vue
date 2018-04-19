@@ -39,12 +39,12 @@
 		        
 		    </div>
 		    <div class="col-sm-4">
-		        
+		        <div style="height: 300px;margin-bottom:-30px;">
+        		    <google-map :property="property"></google-map>
+        		</div>
 		    </div>
 		</div>
-		<div style="height: 300px;margin-bottom:-30px;">
-		    <google-map :property="property"></google-map>
-		</div>
+		
 		<!--AIzaSyCj7UeR0E-kWVAnM7XG4sgm38JnCm6eqx0-->
 	</div>
 </template>
