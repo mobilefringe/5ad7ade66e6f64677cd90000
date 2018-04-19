@@ -23,42 +23,7 @@
 		    <div>
 		      <h4 class="home_page_title caps">{{$t("home_page.explore")}} {{property.name}}</h4>
 		    </div>
-		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="hidden_phone" key="1">
-                <div v-masonry-tile class="item" >
-                    <div v-for="feature in feature_items" class="grid-item" :class="feature.masonry_class">
-                    	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
-                    	<!--class="ih-item circle effect19"-->
-                    		<router-link :to="feature.url">
-                    			<img :src="feature.image_url" alt="name">
-                    			<div class="info">
-                    				<div class="content hvr-sink">
-                    					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
-                    					<h3 v-else> {{feature.name_2}} </h3>
-                    				</div>
-                    			</div>
-                    		</router-link>
-                    	</div>
-                    </div>
-                </div>
-            </div>
-           <div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone" key="2">
-                <div v-masonry-tile class="item" >
-                    <div v-for="feature in mobile_feature_items" class="grid-item" :class="feature.masonry_class">
-                    	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
-                    	<!--class="ih-item circle effect19"-->
-                    		<router-link :to="feature.url">
-                    			<img :src="feature.image_url" alt="name">
-                    			<div class="info">
-                    				<div class="content hvr-sink">
-                    					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
-                    					<h3 v-else> {{feature.name_2}} </h3>
-                    				</div>
-                    			</div>
-                    		</router-link>
-                    	</div>
-                    </div>
-                </div>
-            </div>
+		    
             <div>
 		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
 		    </div>
