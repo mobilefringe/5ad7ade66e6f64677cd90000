@@ -85,14 +85,14 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 newsletter_email: "",
                 stickyMenu: false,
                 isSticky: 700,
-                property_logo : "//codecloud.cdn.speedyrails.net/sites/5ad7ade66e6f64677cd90000/image/png/1522945080899/mmlogo500.png"
+                property_logo : "//codecloud.cdn.speedyrails.net/sites/5ad7ade66e6f64677cd90000/image/png/1524150839429/Logo@2x.png"
             }
         },
         created() {
             this.loadData().then(response => {
                 this.dataLoaded = true;
                 this.locale = "en-ca";
-                this.property.default_logo = "//codecloud.cdn.speedyrails.net/sites/5ad7ade66e6f64677cd90000/image/png/1524150839429/Logo@2x.png";
+                this.property.default_logo = "//codecloud.cdn.speedyrails.net/sites/5ad7ade66e6f64677cd90000/image/png/1524077349605/mm_default_logo.png";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
             window.addEventListener('resize', this.checkWindowWidth);
