@@ -27,29 +27,29 @@
     				<transition name="custom-classes-transition" enter-active-class="fadeIn">
     					<router-view class="router_content" :locale="locale"></router-view>
     				</transition>
-    				<div class="footer">
-    					<div class="site_container">
-    						<div class="site_logo visible_phone">
-    							<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
-    						</div>
-    						<div>
-    						    <div class="tel_num" v-if="property">
-                                    <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
-                                </div>
-    						</div>
-    						<div class="footer_social">
-    							<a href="https://www.instagram.com/shopbdc_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="https://www.facebook.com/bonniedoonsc" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="https://www.pinterest.ca/bonniedoonsc" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="https://www.twitter.com/bonniedoonsc" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    						</div>
-    						<div class="footer_terms">
-    						    <p> <router-link to="/">Code Of Conduct</router-link></p>
-    							<p>&copy; {{copyright_year}}<span class="caps"> {{property.name}}</span> {{$t("footer.all_rights")}}<router-link to="/pages/bonniedoon-privacy-policy"> {{$t("footer.privacy_policy")}} </router-link> <span class="hidden_phone">|</span><br class="visible_phone"/><span> {{$t("footer.powered_by")}}<a href="//www.mallmaverick.com" target="_blank"> Mall Maverick</a></span></p>
+    				<!--<div class="footer">-->
+    				<!--	<div class="site_container">-->
+    				<!--		<div class="site_logo visible_phone">-->
+    				<!--			<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>-->
+    				<!--		</div>-->
+    				<!--		<div>-->
+    				<!--		    <div class="tel_num" v-if="property">-->
+        <!--                            <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>-->
+        <!--                        </div>-->
+    				<!--		</div>-->
+    				<!--		<div class="footer_social">-->
+    				<!--			<a href="https://www.instagram.com/shopbdc_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
+        <!--                        <a href="https://www.facebook.com/bonniedoonsc" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>-->
+        <!--                        <a href="https://www.pinterest.ca/bonniedoonsc" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>-->
+        <!--                        <a href="https://www.twitter.com/bonniedoonsc" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+    				<!--		</div>-->
+    				<!--		<div class="footer_terms">-->
+    				<!--		    <p> <router-link to="/">Code Of Conduct</router-link></p>-->
+    				<!--			<p>&copy; {{copyright_year}}<span class="caps"> {{property.name}}</span> {{$t("footer.all_rights")}}<router-link to="/pages/bonniedoon-privacy-policy"> {{$t("footer.privacy_policy")}} </router-link> <span class="hidden_phone">|</span><br class="visible_phone"/><span> {{$t("footer.powered_by")}}<a href="//www.mallmaverick.com" target="_blank"> Mall Maverick</a></span></p>-->
     							<!--<p>Powered by <a href="//www.mallmaverick.com" target="_blank">Mall Maverick</a></p>-->
-    						</div>
-    					</div>
-    				</div>
+    				<!--		</div>-->
+    				<!--	</div>-->
+    				<!--</div>-->
     			</div>
     		</div>
     		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
