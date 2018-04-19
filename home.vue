@@ -25,10 +25,12 @@
 		    </div>
 		    <div class="feature_items_container">
 		        <div class="feature_item col-sm-4" v-for="feature in feature_items">
-		            <img :src="feature.image_url" :alt="feature.name" class="image">
-		            <div class="feature_name">
-		                {{feature.name}}
-		            </div>
+    		        <router-link :to="feature.url">
+    		            <img :src="feature.image_url" :alt="feature.name" class="image">
+    		            <div class="feature_name">
+    		                {{feature.name}}
+    		            </div>
+		            </router-link>
 		        </div>
 		    </div>
             <div>
