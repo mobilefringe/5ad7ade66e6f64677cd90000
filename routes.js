@@ -1,7 +1,7 @@
 define([], function() {
     return [{
             path: '/',
-            component: view('under-_onstruction')
+            component: view('under_construction')
         },
         {
             path: '/stores',
