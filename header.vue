@@ -137,9 +137,9 @@
             },
             todays_hours () {
                 var mall_hour = this.getTodayHours;
-                open_time
+                open_time = moment().tz(this.timezone)
                 var today = moment().tz(this.timezone); 
-                if(today.open_time.format()){
+                if(){
                     
                 }
                 return today;
