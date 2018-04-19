@@ -23,7 +23,7 @@
 		    <div>
 		      <h4 class="home_page_title caps">{{$t("home_page.explore")}} {{property.name}}</h4>
 		    </div>
-		    <div class="feature_items_container">
+		    <div class="feature_items_container clearfix">
 		        <div class="feature_item col-sm-4" v-for="feature in feature_items">
     		        <router-link :to="feature.url">
     		            <img :src="feature.image_url" :alt="feature.name" class="image">
