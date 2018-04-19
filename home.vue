@@ -23,7 +23,7 @@
 		    <div>
 		      <h4 class="home_page_title caps">{{$t("home_page.explore")}} {{property.name}}</h4>
 		    </div>
-		    <div>
+		    <div class="feature_items_container">
 		        
 		    </div>
             <div>
