@@ -405,7 +405,7 @@ strong, .bold {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .router_content {
@@ -665,7 +665,7 @@ strong, .bold {
 /* DESKTOP NAV */
 .menu_bar {
     height: 70px;
-    background: #ff;
+    background: #fff;
     z-index: 999;
 }
 .top_nav {
