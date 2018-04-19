@@ -25,7 +25,7 @@
     			<!--<header-component :class="{transition_bg : stickyMenu}" :property_logo="property_logo"></header-component>-->
     			<div class="main_content_container" v-if="dataLoaded">
     				<transition name="custom-classes-transition" enter-active-class="fadeIn">
-    					<router-view class="router_content" :locale="locale"></router-view>
+    					<router-view class="router_content" :locale="locale" :property_logo="property_logo"></router-view>
     				</transition>
     			</div>
     		</div>
