@@ -102,9 +102,7 @@
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
-                return {
-                    suggestionAttribute: 'name',
-                    search: '',
+                return {',
                     slickOptions: {
                         arrows: false,
                         autoplay: true,
@@ -117,8 +115,6 @@
                         speed: 1600
                     },
                     dataLoaded: false,
-                    show_popup: false,
-                    popup: null,
                     form_data : {},
                     formSuccess : false,
                     formError: false,
