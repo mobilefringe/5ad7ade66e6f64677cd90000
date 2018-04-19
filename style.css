@@ -669,12 +669,11 @@ strong, .bold {
     z-index: 999;
 }
 .top_nav {
-    display:inline-block;
+        display: inline-block;
     float: right;
-    top: 50%;
+    top: 0;
     position: absolute;
     right: 0;
-    transform: translateY(-50%);
 }
 #primary_nav {
     margin: 0 auto;
