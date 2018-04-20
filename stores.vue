@@ -157,20 +157,7 @@
                     this.search_result = "";
                     this.$router.push("/stores/"+option.slug);
                 },
-                filterStores (letter) {
-                    
-                    this.breakIntoCol = false;
-                    if(letter == "All"){
-                        this.filteredStores = this.storesByAlphaIndex;
-                        this.breakIntoCol = true;
-                    }
-                    else {
-                        var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
-                        this.filteredStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                        this.breakIntoCol = false;
-                    }
-                    
-                }
+                
             },
             computed: {
                 ...Vuex.mapGetters([
