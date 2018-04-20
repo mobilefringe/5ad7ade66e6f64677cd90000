@@ -133,6 +133,14 @@
                     this.$router.push("/stores/"+option.slug);
                 },
                 
+                scrollToAlpha(letter) {
+                    console.log(letter);
+                    var position = $("#"+letter).offset().top;
+                    $('html, body').animate({
+                		scrollTop: position
+                	}, 500, 'linear');
+                }
+                
             },
             computed: {
                 ...Vuex.mapGetters([
