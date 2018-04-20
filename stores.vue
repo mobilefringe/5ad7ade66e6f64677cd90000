@@ -132,7 +132,7 @@
                 scrollToAlpha(letter) {
                     console.log(letter);
                     var position = 0;
-                    if(letter="All"){
+                    if(letter == "All"){
                         // position = $(".store_col_1").offset().top;
                         return;
                     }
