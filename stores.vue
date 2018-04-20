@@ -54,7 +54,7 @@
                             <div v-for="(stores,key) in filteredStores" style="padding:0 10px;">
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
-                                    <div class="store_list_content cats_row" :data-cat="store.cat_list">
+                                    <div class="store_list_content cats_row">
                                         <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
                                         <!--<p class="store_name"><router-link :to="{ path: /stores/'+store.slug , query: { location: store.svgmap_region }}">{{store.name}}</router-link></p>-->
                                         
