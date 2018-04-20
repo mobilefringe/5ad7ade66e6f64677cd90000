@@ -39,6 +39,7 @@
 							<nav id="primary_nav">
 								<ul>
 									<li v-for="item in menu_items" class="menu_item">
+									    <a v-if="is_external_link" :href="item.href"></a>
 										<router-link :to="item.href">{{$t(item.name)}}</router-link>
 									</li>
 								</ul>
