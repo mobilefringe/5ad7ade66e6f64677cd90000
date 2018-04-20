@@ -14,7 +14,7 @@
 			<div class="row padding_bottom_50 phone_padding_top_60">
                 <div class="col-md-12">
                     <div class="alpha_list">
-                        <a class="all_a" href="all_a">All</a>
+                        <a class="all_a" href="all">All</a>
                         <a>#</a>
                         <a v-for="letter in alphabet">{{letter}}</a>
                     </div>
