@@ -130,7 +130,7 @@
                     this.$router.push("/stores/"+option.slug);
                 },
                 scrollToAlpha(letter) {
-                    $("#"+letter).removeClass('active');
+                    $(".store_initial_container").removeClass('active');
                     var position = 0;
                     if(letter == "All"){
                         // position = $(".store_col_1").offset().top;
