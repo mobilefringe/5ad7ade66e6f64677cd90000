@@ -4,8 +4,10 @@
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content"> 
-				    <div class="title_container"></div>
-					<h1>{{$t("stores_page.store_directory")}}</h1>
+				    <div class="title_container">
+				        <h1>{{$t("stores_page.store_directory")}}</h1>
+				    </div>
+					
 				</div>
 			</div>
 		</div>
