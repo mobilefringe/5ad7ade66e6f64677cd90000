@@ -16,7 +16,7 @@
                     <div class="alpha_list">
                         <a class="all_a" href="#all">All</a>
                         <a>#</a>
-                        <a v-for="letter in alphabet"  href="#all">{{letter}}</a>
+                        <a v-for="letter in alphabet"  :href="'#'+letter">{{letter}}</a>
                     </div>
                 </div>
                 <div class="col-md-12">
