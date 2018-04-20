@@ -136,7 +136,7 @@
                         position = $(".store_col_1").offset().top;
                     }
                     else {
-                        position = $("#"+letter).offset().top;
+                        position = $("#"+letter).offset().top -70;
                     }
                     $('html, body').animate({
                 		scrollTop: position
