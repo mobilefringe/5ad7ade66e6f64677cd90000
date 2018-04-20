@@ -130,7 +130,6 @@
                     this.$router.push("/stores/"+option.slug);
                 },
                 scrollToAlpha(letter) {
-                    console.log(letter);
                     $("#"+letter).removeClass('active');
                     var position = 0;
                     if(letter == "All"){
