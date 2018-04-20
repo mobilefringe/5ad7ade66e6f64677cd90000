@@ -133,9 +133,9 @@
                 },
                 scrollToAlpha(letter) {
                     console.log(letter);
-                    var position;
+                    var position = 0;
                     if(letter="all"){
-                        position = $("#store_col_1").offset().top;
+                        position = $(".store_col_1").offset().top;
                     }
                     else {
                         position = $("#"+letter).offset().top;
