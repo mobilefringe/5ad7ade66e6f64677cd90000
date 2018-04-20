@@ -5,7 +5,7 @@
 			<div class="site_container">
 				<div class="header_content"> 
 				    <div class="title_container">
-				        <h1>{{$t("stores_page.store_directory")}}</h1>
+				        <h2 :class="page_header_title">{{$t("stores_page.store_directory")}}</h2>
 				    </div>
 				</div>
 			</div>
