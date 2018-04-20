@@ -131,6 +131,7 @@
                 },
                 scrollToAlpha(letter) {
                     console.log(letter);
+                    $("#"+letter).removeClass('active');
                     var position = 0;
                     if(letter == "All"){
                         // position = $(".store_col_1").offset().top;
@@ -138,7 +139,7 @@
                     }
                     else {
                         position = $("#"+letter).offset().top -100;
-                        $("#"+letter).addClass('active')
+                        $("#"+letter).addClass('active');
                     }
                     $('html, body').animate({
                 		scrollTop: position
