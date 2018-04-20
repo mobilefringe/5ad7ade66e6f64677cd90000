@@ -4,7 +4,7 @@
 			<div class="site_container">
 				<div class="header_content"> 
 				    <div class="title_container">
-				        <h2 class="page_header_title caps">{{$t("stores_page.store_directory")}}</h2>
+				        <h2 class="page_header_title caps">{{$t("header.contact_us")}}</h2>
 				    </div>
 				</div>
 			</div>
