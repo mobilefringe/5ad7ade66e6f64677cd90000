@@ -22,15 +22,14 @@
                         <div class="store_col_1" :class="{ all_storelist_container: breakIntoCol }">
                             <div v-for="(stores,key) in filteredStores">
                             <div class="store_initial_container">
-                            <a :name="key"></a>
                                 <span class="store_initial" :id="key" :data-initial="key">{{key}}</span>
                             </div>
                             <div id="store_list_container" >
-                            <div class="store_list" v-for="store in stores">
-                                <div class="store_list_content cats_row">
-                                    <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
-                                </div>
-                            </div>   
+                                <div class="store_list" v-for="store in stores">
+                                    <div class="store_list_content cats_row">
+                                        <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
+                                    </div>
+                                </div>   
                             </div>
                             </div>
                         </div>
