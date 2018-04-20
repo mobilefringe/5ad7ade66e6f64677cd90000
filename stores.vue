@@ -11,36 +11,6 @@
 			</div>
 		</div>
 		<div class="site_container page_content">
-			<!--<div class="row bold store_btns">-->
-			<!--	<div class="col-sm-6 col-md-4">-->
-			<!--		<div class="store_search" >-->
-			<!--			<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left">-->
-			<!--				<template slot="item" scope="option" class="manual">-->
-			<!--					<article class="media">-->
-			<!--						<p>-->
-			<!--							<strong>{{ option.data.name }}</strong>-->
-			<!--						</p>-->
-			<!--					</article>-->
-			<!--				</template>-->
-			<!--			</search-component>-->
-			<!--			<img src="//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1517497861636/search_icon_2x.png" class="pull-right" id="store_search_img" alt="">-->
-			<!--		</div>-->
-			<!--	</div>-->
-			<!--	<div class="col-sm-6 col-md-4">-->
-			<!--		<div class="store_search" >-->
-			<!--			<div class="category-select-container">-->
-			<!--				<v-select v-model="selectedCat" :options="dropDownCats" :searchable="false" :on-change="filterByCategory" class="category-select" :placeholder="$t('stores_page.sort_by_cats')" id="selectByCat"></v-select>-->
-			<!--			</div>-->
-			<!--		</div>-->
-			<!--	</div>-->
-			<!--	<div class="col-md-4 col-sm-12">-->
-			<!--		<div class="store_search" >-->
-			<!--			<router-link class="directory_link" to="/map">-->
-			<!--				<div class="promotions_header_container directory_btn">{{$t("stores_page.view_map")}}</div>-->
-			<!--			</router-link>-->
-			<!--		</div>-->
-			<!--	</div>-->
-			<!--</div>-->
 			<div class="row padding_bottom_50 phone_padding_top_60">
                 <div class="col-md-12">
                     <div class="alpha_list">
