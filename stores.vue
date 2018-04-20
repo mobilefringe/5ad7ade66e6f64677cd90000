@@ -52,7 +52,7 @@
                     listMode: "alphabetical",
                     selectedCat: null,
                     selectedAlpha: "All",
-                    alphabet: ["All", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+                    alphabet: ["All", "#", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
                     filteredStores: null,
                     dataloaded: false,
                     mobile_store: false,
