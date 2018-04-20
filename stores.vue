@@ -24,7 +24,7 @@
                     <div class="row" v-if="filteredStores">
                         <div class="col-md-12 store_col_1" :class="{ all_storelist_container: breakIntoCol }">
                             <div v-for="(stores,key) in filteredStores" style="padding:0 10px;">
-                            <div>
+                            <div class="store_initial_container">
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
                             </div>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
