@@ -137,7 +137,7 @@
                         return;
                     }
                     else {
-                        console.log(position);
+                        console.log($("#"+letter).offset().top);
                         position = $("#"+letter).offset().top -70;
                         console.log(position)
                     }
