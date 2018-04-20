@@ -1,0 +1,14 @@
+[
+    {
+        "name": "header.stores",
+        "href": "/stores"
+    },
+    {
+        "name": "header.contact_us",
+        "href": "/contact_us"
+    },
+    {
+        "name": "header.leasing",
+        "href": "http://www.smartcentres.com/leasing/leasing-inquiry/"
+    }
+]
