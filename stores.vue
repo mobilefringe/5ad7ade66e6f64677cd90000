@@ -132,9 +132,9 @@
                     this.search_result = "";
                     this.$router.push("/stores/"+option.slug);
                 },
-                
                 scrollToAlpha(letter) {
                     console.log(letter);
+                    if(letter="all")
                     var position = $("#"+letter).offset().top;
                     $('html, body').animate({
                 		scrollTop: position
