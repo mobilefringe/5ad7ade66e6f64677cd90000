@@ -106,12 +106,12 @@
                     this.filteredStores = this.storesByAlphaIndex;
                     
                     // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
-                    var temp_repo = this.findRepoByName('Stores Banner');
-                    if(temp_repo) {
-                        this.pageBanner = temp_repo.images[0];
-                        // this.pageBanner = {};
-                        // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1523029958383/stores_dir_inside_banner.png"
-                    }
+                    // var temp_repo = this.findRepoByName('Stores Banner');
+                    // if(temp_repo) {
+                        // this.pageBanner = temp_repo.images[0];
+                        this.pageBanner = {};
+                        this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1524238270214/stores_banner.png"
+                    // }
                     // console.log(temp_repo, this.pageBanner); 
                 });
             },
