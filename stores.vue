@@ -214,16 +214,19 @@
                         return (o.$el.className == "svg-map")
                     })[0];
                 },
-                filterStores() {
-                    letter = this.selectedAlpha;
-                    if (letter == "All") {
-                        this.filteredStores = this.allStores;
-                    } else {
-                        var filtered = _.filter(this.allStores, function(o, i) {
-                            return _.lowerCase(o.name)[0] == _.lowerCase(letter);
-                        });
-                        this.filteredStores = filtered;
+                filterStores (letter) {
+                    
+                    this.breakIntoCol = false;
+                    if(letter == "All"){
+                        this.filteredStores = this.storesByAlphaIndex;
+                        this.breakIntoCol = true;
                     }
+                    else {
+                        var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
+                        this.filteredStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
+                        this.breakIntoCol = false;
+                    }
+                    
                 },
                 filterByCategory() {
                     category_id = this.selectedCat;
