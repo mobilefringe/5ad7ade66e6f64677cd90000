@@ -24,7 +24,10 @@
                     <div class="row" v-if="filteredStores">
                         <div class="col-md-12 store_col_1" :class="{ all_storelist_container: breakIntoCol }">
                             <div v-for="(stores,key) in filteredStores" style="padding:0 10px;">
+                            <div>
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
+                                
+                            </div>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row">
                                         <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
