@@ -87,6 +87,7 @@
                     windowWidth: 0,
                     pageBanner : null,
                     search_result : null,
+                    breakIntoCol : true
                 }
             },
             // created() {
