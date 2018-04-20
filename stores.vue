@@ -7,7 +7,6 @@
 				    <div class="title_container">
 				        <h1>{{$t("stores_page.store_directory")}}</h1>
 				    </div>
-					
 				</div>
 			</div>
 		</div>
