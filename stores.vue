@@ -137,9 +137,7 @@
                         return;
                     }
                     else {
-                        console.log($("#"+letter).offset().top);
                         position = $("#"+letter).offset().top -100;
-                        console.log(position)
                     }
                     $('html, body').animate({
                 		scrollTop: position
