@@ -1,0 +1,258 @@
+<template>
+	<div v-if="dataloaded">
+		<div class="page_header" v-if="pageBanner" v-lazy:background-image="pageBanner.image_url">
+			<!--http://via.placeholder.com/1920x300-->
+			<div class="site_container">
+				<div class="header_content">
+					<h1>{{$t("stores_page.store_directory")}}</h1>
+				</div>
+			</div>
+		</div>
+		<div class="site_container page_content">
+			<div class="row bold store_btns">
+				<div class="col-sm-6 col-md-4">
+					<div class="store_search" >
+						<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left">
+							<template slot="item" scope="option" class="manual">
+								<article class="media">
+									<p>
+										<strong>{{ option.data.name }}</strong>
+									</p>
+								</article>
+							</template>
+						</search-component>
+						<img src="//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1517497861636/search_icon_2x.png" class="pull-right" id="store_search_img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="store_search" >
+						<div class="category-select-container">
+							<v-select v-model="selectedCat" :options="dropDownCats" :searchable="false" :on-change="filterByCategory" class="category-select" :placeholder="$t('stores_page.sort_by_cats')" id="selectByCat"></v-select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="store_search" >
+						<router-link class="directory_link" to="/map">
+							<div class="promotions_header_container directory_btn">{{$t("stores_page.view_map")}}</div>
+						</router-link>
+					</div>
+				</div>
+			</div>
+			<div class="row padding_bottom_50 phone_padding_top_60">
+                <div class="col-md-12">
+                    <div class="alpha_list">
+                        <a @click="filterStores('All')" class="all_a">All</a>
+                        <a @click="filterStores('#')">#</a>
+                        <a v-for="letter in alphabet" @click="filterStores(letter)">{{letter}}</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
+                    <div class="row" v-if="filteredStores">
+                        <div class="col-md-12 store_col_1" :class="{ all_storelist_container: breakIntoCol }">
+                            <div v-for="(stores,key) in filteredStores" style="padding:0 10px;">
+                                <span class="store_initial" :data-initial="key">{{key}}</span>
+                                <div id="store_list_container" class="store_list" v-for="store in stores">
+                                    <div class="store_list_content cats_row" :data-cat="store.cat_list">
+                                        <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
+                                        <!--<p class="store_name"><router-link :to="{ path: /stores/'+store.slug , query: { location: store.svgmap_region }}">{{store.name}}</router-link></p>-->
+                                        
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+		</div>
+	</div>
+</template>
+
+<script>
+    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "vue-lazy-load"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent,VueLazyload) {
+        Vue.use(VueLazyload);
+        return Vue.component("stores-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    listMode: "alphabetical",
+                    selectedCat: null,
+                    selectedAlpha: "All",
+                    alphabet: ["All", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+                    filteredStores: null,
+                    dataloaded: false,
+                    mobile_store: false,
+                    windowWidth: 0,
+                    pageBanner : null,
+                    search_result : null,
+                }
+            },
+            // created() {
+            //     // window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+            //     this.$store.dispatch("getData", "categories").then(response => {
+            //         this.dataloaded = true;
+            //         this.filteredStores = this.allStores;
+            //     }, error => {
+            //         console.error("Could not retrieve data from server. Please check internet connection and try again.");
+            //     });
+            // },
+            created (){
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    this.filteredStores = this.allStores;
+                    
+                    // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
+                    var temp_repo = this.findRepoByName('Stores Banner');
+                    if(temp_repo) {
+                        this.pageBanner = temp_repo.images[0];
+                        // this.pageBanner = {};
+                        // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1523029958383/stores_dir_inside_banner.png"
+                    }
+                    // console.log(temp_repo, this.pageBanner); 
+                });
+            },
+            watch: {
+                windowWidth: function() {
+                    if (this.windowWidth <= 768) {
+                        this.mobile_store = true;
+                    } else {
+                        this.mobile_store = false;
+                    }
+                },
+            },
+            mounted() {
+                // this.filteredStores = this.allStores;
+                this.$nextTick(function() {
+                    window.addEventListener('resize', this.getWindowWidth);
+                    //Init
+                    this.getWindowWidth();
+                });
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                changeMode(mode) {
+                    this.listMode = mode;
+                },
+                updateSVGMap(map) {
+                    this.map = map;
+                },
+                addLandmark(store) {
+                    this.svgMapRef.addMarker(store);
+                },
+                getWindowWidth(event) {
+                    this.windowWidth = window.innerWidth;
+                },
+                onOptionSelect(option) {
+                    this.search_result = "";
+                    this.$router.push("/stores/"+option.slug);
+                },
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedStores',
+                    'processedCategories',
+                    'storesByAlphaIndex',
+                    'storesByCategoryName',
+                    'findCategoryById',
+                    'findCategoryByName',
+                    'findRepoByName'
+
+                ]),
+                allStores() {
+                    var stores = this.processedStores;
+                    var vm = this;
+                   _.forEach(stores, function(store, key) {
+                       if (_.includes(store.store_front_url_abs, 'missing')) {
+                            store.store_front_url_abs = vm.property.default_logo;
+                        }
+                        if(store.assets != undefined){
+                            //Stores JSON
+                            var store_id = store.id
+                            vm.$store.dispatch('LOAD_PAGE_DATA', { url: vm.property.mm_host + "/api/v4/thegateway/stores/" + store_id + "/store_files.json" }).then(response => {
+                                if(response.data != undefined) {
+                                    hover_image = response.data.store_files[0].url
+                                    store.hover_img = 'https://www.mallmaverick.com' + hover_image
+                                    vm.filteredStores = null;
+                                    vm.filteredStores = stores; 
+                                    vm.filteredStores[key].hover_img = 'https://www.mallmaverick.com' + hover_image
+                                }
+                            }, error => {
+                                console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                                vm.$router.replace({ name: 'home' });
+                            });
+                        } 
+                    });
+                    return stores;
+                },
+                allCatergories() {
+                    return this.processedCategories;
+                },
+                dropDownCats() {
+                    var cats = _.map(this.processedCategories, 'name');
+                    cats.unshift('All');
+                    return cats;
+                },
+                getPNGurl() {
+                    return "https://www.mallmaverick.com" + this.property.map_url;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) {
+                        return (o.$el.className == "svg-map")
+                    })[0];
+                },
+                filterStores() {
+                    letter = this.selectedAlpha;
+                    if (letter == "All") {
+                        this.filteredStores = this.allStores;
+                    } else {
+                        var filtered = _.filter(this.allStores, function(o, i) {
+                            return _.lowerCase(o.name)[0] == _.lowerCase(letter);
+                        });
+                        this.filteredStores = filtered;
+                    }
+                },
+                filterByCategory() {
+                    category_id = this.selectedCat;
+                    if (category_id == "All" || category_id == null || category_id == undefined) {
+                        category_id = "All";
+                    } else {
+                        category_id = this.findCategoryByName(category_id).id;
+                    }
+
+                    if (category_id == "All") {
+                        this.filteredStores = this.allStores;
+                    } else {
+
+                        var find = this.findCategoryById;
+                        var filtered = _.filter(this.allStores, function(o) {
+                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                        });
+                    
+                        this.filteredStores = filtered;
+                    }
+                    var el = document.getElementById("selectByCat");
+                    if(el) {
+                        el.classList.remove("open");
+                        console.log(el.classList);
+                    }
+                    
+                },
+                
+            },
+            beforeDestroy: function() {
+                window.removeEventListener('resize', this.getWindowWidth);
+            },
+        });
+    });
+</script>
