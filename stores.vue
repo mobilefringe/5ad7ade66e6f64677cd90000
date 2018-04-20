@@ -16,7 +16,7 @@
                     <div class="alpha_list">
                         <a @click="filterStores('All')" class="all_a">All</a>
                         <a @click="filterStores('#')">#</a>
-                        <a v-for="letter in alphabet" @click="filterStores(letter)">{{letter}}</a>
+                        <a v-for="letter in alphabet">{{letter}}</a>
                     </div>
                 </div>
                 <div class="col-md-12">
