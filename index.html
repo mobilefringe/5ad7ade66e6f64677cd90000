@@ -47,7 +47,9 @@
 						<div class=" col-sm-4">
 						    <social-links></social-links>
 						</div>
-						<div class="footer_terms ">
+						
+					</div>
+					<div class="footer_terms ">
 							<p v-if="property">
 								&copy; {{copyright_year}}<span class="caps"> {{property.name}}</span> {{$t("footer.all_rights")}}
 								<router-link to="/pages/pinecentre-privacy-policy"> {{$t("footer.privacy_policy")}} </router-link>
@@ -55,7 +57,6 @@
 							</p>
 							<!--<p>Powered by <a href="//www.mallmaverick.com" target="_blank">Mall Maverick</a></p>-->
 						</div>
-					</div>
 				</div>
     		</div>
     		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
