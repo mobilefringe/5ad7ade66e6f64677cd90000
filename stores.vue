@@ -202,13 +202,6 @@
                         this.breakIntoCol = false;
                     }
                     
-                },
-                scrollToAlpha(letter) {
-                    console.log(letter);
-                    var position = $("#"+letter).offset().top;
-                    $('html, body').animate({
-                		scrollTop: position
-                	}, 500, 'linear');
                 }
                 
             },
