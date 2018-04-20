@@ -92,7 +92,7 @@
                     //     // this.pageBanner = {};
                     //     // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1523030162566/contact_us_inside_banner.png"
                     // }
-                     this.pageBanner = {};
+                    this.pageBanner = {};
                     this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1524247425145/about_us.png"
                 });
             },
