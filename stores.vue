@@ -102,7 +102,8 @@
             created (){
                 this.loadData().then(response => {
                     this.dataloaded = true;
-                    this.filteredStores = this.allStores;
+                    // this.filteredStores = this.allStores;
+                    this.filteredStores = this.storesByAlphaIndex;
                     
                     // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
                     var temp_repo = this.findRepoByName('Stores Banner');
@@ -169,7 +170,7 @@
                         this.breakIntoCol = false;
                     }
                     
-                },
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
