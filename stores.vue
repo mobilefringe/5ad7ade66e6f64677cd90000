@@ -134,8 +134,11 @@
                 },
                 scrollToAlpha(letter) {
                     console.log(letter);
-                    if(letter="all")
-                    var position = $("#"+letter).offset().top;
+                    var position;
+                    if(letter="all"){
+                        position = $("#"+letter).offset().top;
+                    }
+                    
                     $('html, body').animate({
                 		scrollTop: position
                 	}, 500, 'linear');
