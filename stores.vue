@@ -135,7 +135,7 @@
                     console.log(letter);
                     var position;
                     if(letter="all"){
-                        position = $("#"+letter).offset().top;
+                        position = $("#store_col_1").offset().top;
                     }
                     else {
                         position = $("#"+letter).offset().top;
