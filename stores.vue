@@ -138,7 +138,9 @@
                     if(letter="all"){
                         position = $("#"+letter).offset().top;
                     }
-                    
+                    else {
+                        position = $("#"+letter).offset().top;
+                    }
                     $('html, body').animate({
                 		scrollTop: position
                 	}, 500, 'linear');
