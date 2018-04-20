@@ -138,7 +138,7 @@
                     }
                     else {
                         console.log($("#"+letter).offset().top);
-                        position = $("#"+letter).offset().top -80;
+                        position = $("#"+letter).offset().top -100;
                         console.log(position)
                     }
                     $('html, body').animate({
