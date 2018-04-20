@@ -203,7 +203,7 @@
                     }
                     
                 },
-                scrollToAlpha() {
+                scrollToAlpha(letter) {
                     var position = $(".alpha_list").offset().top;
                     $('html, body').animate({
                 		scrollTop: position
