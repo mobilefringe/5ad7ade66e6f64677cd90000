@@ -133,11 +133,13 @@
                     console.log(letter);
                     var position = 0;
                     if(letter="All"){
-                        position = $(".store_col_1").offset().top;
+                        // position = $(".store_col_1").offset().top;
                         return;
                     }
                     else {
+                        console.log(position);
                         position = $("#"+letter).offset().top -70;
+                        console.log(position)
                     }
                     $('html, body').animate({
                 		scrollTop: position
