@@ -204,7 +204,7 @@
                     
                 },
                 scrollToAlpha(letter) {
-                    var position = $(".alpha_list").offset().top;
+                    var position = $("#"+letter).offset().top;
                     $('html, body').animate({
                 		scrollTop: position
                 	}, 500, 'linear');
