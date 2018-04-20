@@ -26,7 +26,7 @@
                             <div v-for="(stores,key) in filteredStores">
                             <div class="store_initial_container">
                             <a :name="key"></a>
-                                <span class="store_initial" :data-initial="key">{{key}}</span>
+                                <span class="store_initial" :id="key" :data-initial="key">{{key}}</span>
                             </div>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row">
