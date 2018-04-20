@@ -22,7 +22,7 @@
                 <div class="col-md-12">
                     <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                     <div class="row" v-if="filteredStores">
-                        <div class="col-md-12 store_col_1" :class="{ all_storelist_container: breakIntoCol }">
+                        <div class="store_col_1" :class="{ all_storelist_container: breakIntoCol }">
                             <div v-for="(stores,key) in filteredStores">
                             <div class="store_initial_container">
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
