@@ -27,7 +27,7 @@
                             <div id="store_list_container" >
                                 <div class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row">
-                                        <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
+                                        <p class="store_name">{{store.name}}</p>
                                     </div>
                                 </div>   
                             </div>
