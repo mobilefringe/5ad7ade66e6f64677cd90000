@@ -28,6 +28,7 @@
                                 <div class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row">
                                         <p class="store_name col-sm-6">{{store.name}}</p>
+                                        <p class="store_name col-sm-6">{{store.name}}</p>
                                     </div>
                                 </div>   
                             </div>
