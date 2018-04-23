@@ -106,16 +106,6 @@ define([], function() {
             }]
         },
         {
-            path: '/newsletter',
-            component: view('default'),
-            children: [{
-                path: '',
-                component: view('newsletter'),
-                name: 'newsletter',
-                props: true
-            }]
-        },
-        {
             path: '/pages',
             component: view('default'),
             redirect: '/404',
@@ -124,46 +114,6 @@ define([], function() {
                 component: view('page_details'),
                 name: 'pageDetails',
                 props: true
-            }]
-        },
-        {
-            path: '/find_us',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('find_us'),
-                name: 'findUs'
-            }]
-        },
-        {
-            path: '/community',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('community'),
-                name: 'community'
-            }]
-        },
-        {
-            path: '/photos',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('photos'),
-                name: 'photos'
-            }]
-        },
-        {
-            path: '/thank_you',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('thank_you'),
-                name: 'thankYou'
             }]
         },
         {
