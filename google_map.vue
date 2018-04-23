@@ -54,17 +54,17 @@
             },
             methods : {
                 initMap() {
-            // Styles a map in night mode.
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: this.position,
-              zoom: this.zoom,
-              styles: googleMapTheme
-            });
-            var marker = new google.maps.Marker({
-              position: this.position,
-              map: map
-            });
-          }
+                    // Styles a map in night mode.
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      center: this.position,
+                      zoom: this.zoom,
+                      styles: googleMapTheme
+                    });
+                    var marker = new google.maps.Marker({
+                      position: this.position,
+                      map: map
+                   });
+                }
             }
         });
     });
