@@ -139,6 +139,7 @@
                     else {
                         position = $("#"+letter).offset().top -100;
                         $("#"+letter).parent().addClass('active');
+                        $('.alpha_letter_'+letter)
                     }
                     $('html, body').animate({
                 		scrollTop: position
