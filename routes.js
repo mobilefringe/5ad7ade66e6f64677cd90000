@@ -20,65 +20,6 @@ define([], function() {
             ]
         },
         {
-            path: '/promotions',
-            component: view('default'),
-            children: [{
-                    path: '',
-                    component: view('promotions'),
-                    name: 'promoList'
-                },
-                {
-                    path: ':id',
-                    component: view('promotion_details'),
-                    name: 'promotionDetails',
-                    props: true
-
-                }
-            ]
-        },
-        {
-            path: '/events',
-            component: view('default'),
-            children: [{
-                    path: '',
-                    component: view('events'),
-                    name: 'eventList'
-                },
-                {
-                    path: ':id',
-                    component: view('event_details'),
-                    name: 'eventDetails',
-                    props: true
-                }
-            ]
-        },
-        {
-            path: '/jobs',
-            component: view('default'),
-            children: [{
-                    path: '',
-                    component: view('jobs'),
-                    name: 'jobList'
-                },
-                {
-                    path: ':id',
-                    component: view('job_details'),
-                    name: 'jobDetails',
-                    props: true
-                }
-            ]
-        },
-        {
-            path: '/map',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('map'),
-                name: 'map'
-            }]
-        },
-        {
             path: '/hours',
             component: view('hours'),
             // children: [{
@@ -86,15 +27,6 @@ define([], function() {
             //     component: view('hours'),
             //     name: 'hourList',
             // }]
-        },
-        {
-            path: '/contest',
-            component: view('default'),
-            children: [{
-                path: '',
-                component: view('contest'),
-                name: 'contestList'
-            }]
         },
         {
             path: '/about_us',
