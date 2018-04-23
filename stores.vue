@@ -28,7 +28,7 @@
                                 <div class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row">
                                         <p class="store_name col-sm-6">{{store.name}}</p>
-                                        <p class="store_name col-sm-6"><i class="fa fa-phone"></i></p>
+                                        <p class="store_name col-sm-6"><i class="fa fa-phone visible_phone"></i></p>
                                     </div>
                                 </div>   
                             </div>
