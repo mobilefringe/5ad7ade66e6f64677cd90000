@@ -131,7 +131,7 @@
                 },
                 scrollToAlpha(letter) {
                     $(".store_initial_container").removeClass('active');
-                    $('.alpha_letter_'+letter).removeClass('active');
+                    $('.alpha_list').removeClass('active');
                     var position = 0;
                     if(letter == "All"){
                         // position = $(".store_col_1").offset().top;
