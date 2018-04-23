@@ -97,11 +97,11 @@ define([], function() {
             }]
         },
         {
-            path: '/contact_us',
+            path: '/about_us',
             component: view('default'),
             children: [{
                 path: '',
-                component: view('contact_us'),
+                component: view('about_us'),
                 name: 'contactUs'
             }]
         },
