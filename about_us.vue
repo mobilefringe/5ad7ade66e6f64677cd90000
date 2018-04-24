@@ -48,7 +48,7 @@
 					<div v-if="property" class="property_dets">
 						<p class="property_name caps">{{property.name}}</p>
 						<p>{{property.address1}}</p>
-						<p>{{property.city}}, {{property.PROVINCE_STATE}}, {{property.postal_code}}, {{property.country}}</p>
+						<p>{{property.city}}, {{property.province_state}}, {{property.postal_code}}, {{property.country}}</p>
 						<p class="property_phone">{{property.contact_phone}} 1905-837-2392</p>
 					</div>
 					<div class="home_contact_container">
