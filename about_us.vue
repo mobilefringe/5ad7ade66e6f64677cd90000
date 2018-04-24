@@ -43,8 +43,7 @@
 		            <div class="google_map">
             		    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3238.228400622835!2d-79.70550983095802!3d43.41266509546466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc115e4093fc343b7!2sSouth+Oakville+Centre!5e0!3m2!1sen!2sca!4v1524581405558" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
             		</div>
-		        </div>v>
-				</div>
+		        </div>
 				<div class="col-sm-4">
 					<div v-if="property" class="property_dets">
 						<p class="property_name caps">{{property.name}}</p>
