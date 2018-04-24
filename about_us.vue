@@ -69,7 +69,7 @@
 								</div>
 							</div>
 							<div class="form-group account-btn text-left m-t-10">
-								<div class="col-xs-12 text-center">
+								<div class="col-xs-12 text-left">
 									<button class="contact_btn hvr-grow-shadow " type="submit" :disabled="formSuccess"><span class="hidden_phone">Submit</span><span class="visible_phone">Send Message</span></button>
 								</div>
 							</div>
