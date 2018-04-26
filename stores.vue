@@ -61,7 +61,7 @@
                     search_result : null,
                     breakIntoCol : true,
                     col1Stores : null,
-                    col2Stores
+                    col2Stores: null
                 }
             },
             // created() {
@@ -98,7 +98,9 @@
                     }
                 },
                 filteredStores () {
-                    
+                    // if(this.filteredStores)
+                    col1Stores : null,
+                    col2Stores: null
                 }
             },
             mounted() {
