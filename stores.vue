@@ -95,6 +95,9 @@
                         this.mobile_store = false;
                     }
                 },
+                filteredStores () {
+                    
+                }
             },
             mounted() {
                 // this.filteredStores = this.allStores;
