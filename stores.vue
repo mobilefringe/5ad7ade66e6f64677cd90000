@@ -59,7 +59,9 @@
                     windowWidth: 0,
                     pageBanner : null,
                     search_result : null,
-                    breakIntoCol : true
+                    breakIntoCol : true,
+                    col1Stores : null,
+                    col2Stores
                 }
             },
             // created() {
