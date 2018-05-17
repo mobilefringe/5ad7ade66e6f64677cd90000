@@ -49,7 +49,7 @@
 						<p class="property_name caps">{{property.name}}</p>
 						<p>{{property.address1}}</p>
 						<p>{{property.city}}, {{property.province_state}}, {{property.postal_code}}, {{property.country}}</p>
-						<p class="property_phone">{{property.contact_phone}} 1905-837-2392</p>
+						<p class="property_phone">{{property.contact_phone}}</p>
 					</div>
 					<div class="home_contact_container">
 						<div class="description_text text-left caps contact_us_dets">
