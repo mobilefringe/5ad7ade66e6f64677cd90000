@@ -34,7 +34,7 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('community_updates'),
-                name: 'aboutUs'
+                name: 'communityUpdates'
             }]
         },
         {
