@@ -97,7 +97,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'utility', "vue!google_map"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate,Utility, GoogleMapAPI) {
+    define(["Vue", "vuex", 'utility'], function(Vue, Vuex,,Utility) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("community-updates", {
