@@ -41,27 +41,27 @@
     			</div>
     			<div class="footer">
 					<div class="site_container ">
-					<div class="footer_centre_nav">
-					    <div class="footer_logos">
-							<div class="site_logo ">
-								<router-link to="/"><img src="//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1524156834519/Logo@_2x.png" alt="Property Logo"/></router-link>
-							</div>
-						</div>
-						<div class="footer_nav hidden_phone">
-							<nav id="primary_nav">
-								<ul>
-									<li v-for="item in menu_items" class="menu_item">
-									    <a v-if="item.is_external_link" :href="item.href" target="_blank">{{$t(item.name)}}</a>
-										<router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!--<div class=" col-sm-4">-->
-						<!--    <social-links class="footer_social"></social-links>-->
-						<!--</div>-->
-						
-					</div>
+    					<div class="footer_centre_nav">
+    					    <div class="footer_logos">
+    							<div class="site_logo ">
+    								<router-link to="/"><img src="//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1524156834519/Logo@_2x.png" alt="Property Logo"/></router-link>
+    							</div>
+    						</div>
+    						<div class="footer_nav hidden_phone">
+    							<nav id="primary_nav">
+    								<ul>
+    									<li v-for="item in menu_items" class="menu_item">
+    									    <a v-if="item.is_external_link" :href="item.href" target="_blank">{{$t(item.name)}}</a>
+    										<router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
+    									</li>
+    								</ul>
+    							</nav>
+    						</div>
+    						<!--<div class=" col-sm-4">-->
+    						<!--    <social-links class="footer_social"></social-links>-->
+    						<!--</div>-->
+    						
+    					</div>
 					</div>
 					<div class="footer_terms ">
 						<p v-if="property">
