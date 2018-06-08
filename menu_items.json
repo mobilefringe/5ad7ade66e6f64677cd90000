@@ -4,11 +4,11 @@
         "href": "/stores"
     },
     {
-        "name": "header.contact_us",
-        "href": "/about_us"
-    },
-    {
         "name": "header.community_updates",
         "href": "/"
+    },
+    {
+        "name": "header.contact_us",
+        "href": "/about_us"
     }
 ]
