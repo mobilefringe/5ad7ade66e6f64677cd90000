@@ -29,6 +29,15 @@ define([], function() {
             }]
         },
         {
+            path: '/community_updates',
+            component: view('default'),
+            children: [{
+                path: '',
+                component: view('about_us'),
+                name: 'aboutUs'
+            }]
+        },
+        {
             path: '/pages',
             component: view('default'),
             redirect: '/404',
