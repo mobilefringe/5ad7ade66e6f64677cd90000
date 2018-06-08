@@ -5,7 +5,7 @@
 			<div class="site_container">
 				<div class="header_content">
 					<div class="title_container">
-						<h2 class="page_header_title caps">{{$t("header.hours_n_contact")}}</h2>
+						<h2 class="page_header_title caps">{{$t("header.about_us")}}</h2>
 					</div>
 				</div>
 			</div>
