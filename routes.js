@@ -20,15 +20,6 @@ define([], function() {
             ]
         },
         {
-            path: '/hours',
-            component: view('hours'),
-            // children: [{
-            //     path: '',
-            //     component: view('hours'),
-            //     name: 'hourList',
-            // }]
-        },
-        {
             path: '/about_us',
             component: view('default'),
             children: [{
