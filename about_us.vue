@@ -155,8 +155,8 @@
             },
             methods: {
                 validateBeforeSubmit() {
-                    this.$validator.validateAll().then((result) => {
-                        let errors = this.errors;
+                    // this.$validator.validateAll().then((result) => {
+                        // let errors = this.errors;
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
                         this.$store.dispatch("CONTACT_US", send_data).then(res => {
