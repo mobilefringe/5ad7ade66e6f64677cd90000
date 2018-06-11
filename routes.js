@@ -20,7 +20,7 @@ define([], function() {
             ]
         },
         {
-            path: '/contact',
+            path: '/contact_us',
             component: view('default'),
             children: [{
                 path: '',
