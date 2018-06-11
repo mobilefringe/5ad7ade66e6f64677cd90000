@@ -24,8 +24,8 @@ define([], function() {
             component: view('default'),
             children: [{
                 path: '',
-                component: view('about_us'),
-                name: 'aboutUs'
+                component: view('contact_us'),
+                name: 'contactUs'
             }]
         },
         {
