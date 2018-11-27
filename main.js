@@ -92,11 +92,12 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 this.dataLoaded = true;
                 this.locale = "en-ca";
                 this.property.default_logo = "//codecloud.cdn.speedyrails.net/sites/5ad8db786e6f64678e960000/image/png/1524077349605/mm_default_logo.png";
+                this.property.mm_host = this.property.mm_host.replace("http:", "");
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
             window.addEventListener('resize', this.checkWindowWidth);
             this.checkWindowWidth();
-            this.property.mm_host = this.property.mm_host.replace("http:", "");
+            
         },
         watch: {
             // watcher to update vue-i18n when the locale has been changed by the user
