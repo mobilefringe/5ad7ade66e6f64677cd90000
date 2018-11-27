@@ -96,6 +96,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             window.addEventListener('scroll', this.enableStickyNavbar);
             window.addEventListener('resize', this.checkWindowWidth);
             this.checkWindowWidth();
+            this.property.mm_host = this.property.mm_host.replace("http:", "");
         },
         watch: {
             // watcher to update vue-i18n when the locale has been changed by the user
