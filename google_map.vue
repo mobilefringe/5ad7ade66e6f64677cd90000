@@ -35,7 +35,7 @@
                 console.log("property_string", property_string)
                 axios.get('https://maps.googleapis.com/maps/api/geocode/json?address='+property_string +'&key=AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY').then(response => {
                     // resolve(response);
-                    console.log(response.data.results)
+                    console.log(response)
                     geometry = response.data.results[0].geometry;
                     var new_pos = {};
                     new_pos.lat = geometry.location.lat;
