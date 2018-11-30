@@ -34,6 +34,7 @@
                 property_string = property_string.replace(/ /g,"+");
                 axios.get('https://maps.googleapis.com/maps/api/geocode/json?address='+property_string +'&key=AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY').then(response => {
                     // resolve(response);
+                    console.log(response.data.results)
                     geometry = response.data.results[0].geometry;
                     var new_pos = {};
                     new_pos.lat = geometry.location.lat;
